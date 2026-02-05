@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Microsoft YaHei', sans-serif;
+            font-family: 'Kaiti', sans-serif;
         }
 
         :root {
@@ -98,7 +98,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070');
+            background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('');
             background-size: cover;
             background-position: center;
             margin-top: 70px;
@@ -950,7 +950,8 @@
                     <ul class="vip-features">
                         <li><i class="fas fa-check"></i> 飞行权限</li>
                     </ul>
-                    <a class="btn btn-outline" style="width:100%;display:inline-flex;justify-content:center;" href="https://pan.baidu.com/s/14Xfte0c-mLE6VRQFtMlIYA?pwd=ir52" target="_blank" rel="noopener">
+                    <a class="btn btn-outline" style="width:100%;display:inline-flex;justify-content:center;"
+                        href="https://pan.baidu.com/s/14Xfte0c-mLE6VRQFtMlIYA?pwd=ir52" target="_blank" rel="noopener">
                         <i class="fas fa-award"></i> 立即开通
                     </a>
                 </div>
@@ -965,7 +966,9 @@
                         <li><i class="fas fa-check"></i> 基础VIP所有特权</li>
                         <li><i class="fas fa-check"></i> 飞行权限</li>
                     </ul>
-                    <a class="btn btn-primary" style="width:100%;background:#FFD700;color:#121212;display:inline-flex;justify-content:center;" href="https://pan.baidu.com/s/14Xfte0c-mLE6VRQFtMlIYA?pwd=ir52" target="_blank" rel="noopener">
+                    <a class="btn btn-primary"
+                        style="width:100%;background:#FFD700;color:#121212;display:inline-flex;justify-content:center;"
+                        href="https://pan.baidu.com/s/14Xfte0c-mLE6VRQFtMlIYA?pwd=ir52" target="_blank" rel="noopener">
                         <i class="fas fa-award"></i> 立即开通
                     </a>
                 </div>
@@ -980,7 +983,9 @@
                         <li><i class="fas fa-check"></i> 高级VIP所有特权</li>
                         <li><i class="fas fa-check"></i> 飞行权限</li>
                     </ul>
-                    <a class="btn btn-primary" style="width:100%;background:#9370DB;display:inline-flex;justify-content:center;" href="https://pan.baidu.com/s/14Xfte0c-mLE6VRQFtMlIYA?pwd=ir52" target="_blank" rel="noopener">
+                    <a class="btn btn-primary"
+                        style="width:100%;background:#9370DB;display:inline-flex;justify-content:center;"
+                        href="https://pan.baidu.com/s/14Xfte0c-mLE6VRQFtMlIYA?pwd=ir52" target="_blank" rel="noopener">
                         <i class="fas fa-award"></i> 立即开通
                     </a>
                 </div>
@@ -1118,10 +1123,11 @@
     <footer>
         <div class="container">
             <div class="copyright">
-                © 2026 MAX服务器 版权所有 | 我的世界官方合作服务器
+                © 2025 - 现在 MAX服务器 版权所有 | 此服务器与mojang AB无关
             </div>
         </div>
     </footer>
+
 
     <!-- 核心功能JS -->
     <script>
@@ -1193,12 +1199,12 @@
                 alert("两次密码输入不一致！");
                 return;
             }
-            if (username.length < 3 || username.length > 12) {
-                alert("用户名长度需在3-12位之间！");
+            if (username.length < 2 || username.length > 30) {
+                alert("用户名长度需在2-30位之间！");
                 return;
             }
-            if (password.length < 6) {
-                alert("密码长度至少6位！");
+            if (password.length < 8) {
+                alert("密码长度至少8位！");
                 return;
             }
 
@@ -1271,10 +1277,11 @@
                 const randomPlayers = Math.floor(Math.random() * 10) + 1;
                 statusEls[1].textContent = `${randomPlayers} / 1000`;
                 // 随机延迟
-                const randomPing = Math.floor(Math.random() * 50) + 10;
+                const randomPing = Math.floor(Math.random() * 50) + 20;
                 statusEls[2].textContent = `${randomPing} ms`;
             }, 10000);
         };
+
     </script>
 </body>
 
